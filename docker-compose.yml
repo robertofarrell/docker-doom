@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  doom:
+    build: .
+    container_name: "docker-doom"
+    restart: "unless-stopped"
+    volumes:
+      - ./iwad:/home/zandronum/iwad
+      - ./wad:/home/zandronum/wad
+      - ./config/:/home/zandronum/config
+      - ./player/:/home/zandronum/player
+    ports:
+      - "10666:10666"
