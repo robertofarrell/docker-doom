@@ -1,9 +1,10 @@
 version: "3"
 
 services:
-  doom:
+  doom-server:
     build: .
     container_name: "docker-doom"
+    command: /home/zandronum/bin/summon.bash
     restart: "unless-stopped"
     volumes:
       - ./iwad:/home/zandronum/iwad
