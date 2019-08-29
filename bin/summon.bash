@@ -1,6 +1,6 @@
 #!/bin/bash
 
-/home/zandronum/zandronum-server \
+/usr/bin/zandronum-server \
   -host \
   -port 10666 \
   -iwad "/home/zandronum/iwads/doom1.wad" \
